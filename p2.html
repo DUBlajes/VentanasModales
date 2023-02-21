@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--Autor: Álvaro Guerrero
+Trabajo Final 1er Trimestre
+Lenguajes de Marcas-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <style>
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="Pathologic1">Pathologic Classic HD</a>
+        <a id=activo href="p2.html"class="galeria">Galería de imágenes</a>
+        <a href="p3.html"class="Pathologic2">Pathologic 2</a>
+    </nav><hr>
+    <header>
+        <h1 id="presentacion" class="Pathologic2">
+            Galeria de imagenes
+        </h1><hr>
+    </header>
+    <div id="caja">
+        <picture class="portaFoto">    
+            <source media="(orientation: landscape) and (min-width: 1201px)" srcset="./images/Responsive/patho-grande-h.avif"
+                type="image/avif">
+            <source media="(orientation: landscape) and (min-width: 1201px)" srcset="./images/Responsive/patho-grande-h.webp"
+                type="image/webp">
+            <source media="(orientation: landscape) and (min-width: 1201px)" srcset="./images/Responsive/patho-grande-h.jpg" type="image/jpeg">
+
+            <source media="(orientation: portrait) and (min-width:601px)" srcset="./images/Responsive/patho-grande-v.avif" type="image/avif">
+            <source media="(orientation: portrait) and (min-width:601px)" srcset="./images/Responsive/patho-grande-v.webp" type="image/webp">
+            <source media="(orientation: portrait) and (min-width:601px)" srcset="./images/Responsive/patho-grande-v.jpg" type="image/jpg">
+
+            <source media="(orientation: landscape) and (min-width: 901px)" srcset="./images/Responsive/patho-mediana-h.avif"
+            type="image/avif">
+            <source media="(orientation: landscape) and (min-width: 901px)" srcset="./images/Responsive/patho-mediana-h.webp"
+            type="image/webp">
+            <source media="(orientation: landscape) and (min-width: 901px)" srcset="./images/Responsive/patho-mediana-h.jpg" type="image/jpeg">
+            <source media="(orientation: portrait) and (min-width:401px)" srcset="./images/Responsive/patho-mediana-v.avif" type="image/avif">
+            <source media="(orientation: portrait) and (min-width:401px)" srcset="./images/Responsive/patho-mediana-v.webp" type="image/webp">
+            <source media="(orientation: portrait) and (min-width:401px)" srcset="./images/Responsive/patho-mediana-v.jpg" type="image/jpg">
+
+
+
+            <source media="(orientation: landscape) and (max-width: 900px)" srcset="./images/Responsive/patho-peque-h.avif" type="image/avif">
+            <source media="(orientation: landscape) and (max-width: 900px)" srcset="./images/Responsive/patho-peque-h.webp" type="image/webp">
+            <source media="(orientation: landscape) and (max-width: 900px)" srcset="../images/Responsive/patho-peque-h.jpg" type="image/jpeg">
+            <source media="(orientation: portrait) and (max-width: 400px)" srcset="./images/Responsive/patho-peque-v.avif" type="image/avif">
+            <source media="(orientation: portrait) and (max-width: 400px)" srcset="./images/Responsive/patho-peque-v.webp" type="image/webp">
+            <source media="(orientation: portrait) and (max-width: 400px)" srcset="./images/Responsive/patho-peque-v.jpg" type="image/jpg">
+
+        <img class="fotoPortada" alt="Portada P2" title="Patho2 Castellano" src="images/Responsive/1.png"/>
+        </picture>
+    </div>    
+
+        <a href="#vModal" id="mostrarModal" class="Pathologic2"><button>Haz click aqui</button></a>
+        
+
+    <div id="vModal">
+        <p>Hola, Carlos.<br>
+             Si ves este mensaje, tenemos que hablar sobre lo de dar clases de ingles en CENEC ;)
+             <a href="#" id="cerrarModal"><button>Haz click aqui para cerrar</button></a>
+        </p>
+    </div>
+
+</body>
+</html>

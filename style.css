@@ -1,0 +1,298 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+@font-face {
+    font-family: 'friz';
+    src: url(fonts/friz-quadrata-std-medium-5870338ec7ef8.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'meethos';
+    src: url(fonts/Meethos.ttf) format('truetype');
+}
+
+body{
+    margin: 5vh 5%;
+    background-color: rgb(15, 15, 15);
+}
+
+a{
+    background-color: rgb(49, 49, 49);
+    height: 2.7em;
+    font-size: xx-large;
+    color: white;
+    text-align: center;
+    padding-top: 0.2em;
+    padding-bottom: 0.1em;
+    padding-left: 0.5em;
+    padding-right:0.5em;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+    box-shadow: 3px 3px 3px 0 rgb(145, 0, 0);
+    margin: 0.5em 2%;
+    cursor:crosshair;
+    cursor: pointer;
+    border-radius: 0.2em;
+}
+
+ a:visited{
+    color: rgba(245, 245, 245, 0.685);
+
+} 
+#activo{
+    box-shadow: 5px 5px 5px 0px rgb(50, 0, 0) inset;
+    background-color: rgba(184, 0, 0, 0.685);
+}
+
+nav{
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(15, 15, 15);
+}
+
+h1{
+    padding: 5vh;
+    color: rgba(245, 245, 245, 0.685);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+#presentacion1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 50px;
+}
+
+#presentacion{
+    color: #C47300;
+    text-align: center;
+    font-size: 50px;
+}
+
+#presentacion2{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 50px;
+}
+
+p{
+    text-align: justify;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    column-count: 1;
+}
+
+.lista{
+    border-style:solid;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5em;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Pathologic1{
+    font-family: friz;
+    font-size: 1.2em;
+    text-align: center;
+    
+}
+.galeria{
+    font-size: 1.2em;
+}
+.Pathologic2{
+    font-family: meethos;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.imagen{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%; 
+}
+
+.foto{
+    display: block;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    transition:transform ease-in-out 0.3s;
+}
+.foto:hover{
+    transform: scale(2);
+}
+
+div{
+    padding-left: 12vw;
+    padding-top: 2vw;
+    padding-right:12vw;
+    padding-bottom: 2vw;
+}
+
+p::first-letter{
+    font-size: 200%;
+}
+p::first-line{
+    color: #C47300;
+}
+a:hover{
+    zoom: 102%;
+}
+.fotoPortada{
+        width: 100%;
+        height: 100%;
+        background-color: lightpink;
+        display: block;
+        object-fit: contain;
+}
+
+@media screen and (orientation:landscape) {
+    .portaFoto {
+        max-width: 1920px;
+        max-height: 1280px;
+
+    }
+    .Pathologic1{
+        font-family: friz;
+        font-size: 1.8em;
+        text-align: center;
+    }
+    .galeria{
+        font-size: 1.8em;
+    }
+    .Pathologic2{
+        font-family: meethos;
+        font-size: 1.8em;
+        text-align: center;
+    }
+    a{
+        background-color: rgb(49, 49, 49);
+        height: 1.5em;
+        font-size: xx-large;
+        color: white;
+        text-align: center;
+        padding-top: 0.2em;
+        padding-bottom: 0.1em;
+        padding-left: 0.5em;
+        padding-right:0.5em;
+        text-shadow: 1px 1px black;
+        text-decoration: none;
+        box-shadow: 3px 3px 3px 0 rgb(145, 0, 0);
+        margin: 0.5em 2%;
+        cursor:crosshair;
+        cursor: pointer;
+        border-radius: 0.2em;
+    }
+@media screen and (orientation:portrait) {
+    .portaFoto {
+        max-width: 800px;
+        max-height: 1200px;
+    }
+    .Pathologic1{
+        font-family: friz;
+        font-size: 1.8em;
+        text-align: center;
+    }
+    .galeria{
+        font-size: 1.8em;
+    }
+    .Pathologic2{
+        font-family: meethos;
+        font-size: 1.8em;
+        text-align: center;
+    }
+    a{
+        background-color: rgb(49, 49, 49);
+        height: 1.5em;
+        font-size: xx-large;
+        color: white;
+        text-align: center;
+        padding-top: 0.2em;
+        padding-bottom: 0.1em;
+        padding-left: 0.5em;
+        padding-right:0.5em;
+        text-shadow: 1px 1px black;
+        text-decoration: none;
+        box-shadow: 3px 3px 3px 0 rgb(145, 0, 0);
+        margin: 0.5em 2%;
+        cursor:crosshair;
+        cursor: pointer;
+        border-radius: 0.2em;
+    }
+}
+#vModal{
+    position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 80%;
+            height: 80%;
+            margin: auto;
+            background-color: rgba(19, 19, 19, 0.966);
+            z-index: 1;
+            display: none;
+            
+}
+
+#vModal:target {
+    display: flex;
+  }
+
+#vModal p {
+    font-family: meethos;
+    width: 60%;
+		height: 40%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		margin: auto;
+		font-size: 2em;
+		text-align: center;
+  }
+
+  #mostrarModal {
+    display: block;
+  }
+  #mostrarModal{
+    display: table;
+    margin: auto;
+    padding: 0 1em;
+    border-radius: 0.5em;
+  }
+  #mostrarModal:hover {
+    background: rgb(104, 18, 18);
+  }
+  
+  #cerrarModal{
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    z-index: 100;
+    display: table;
+    width: 150px;
+    height: 50px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 0.5em;
+    transition: all .5s;
+  }
+
+  #cerrarModal:hover {
+    background: rgb(104, 18, 18);
+    
+  }
+
+}
